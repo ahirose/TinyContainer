@@ -5,29 +5,13 @@
 ## 概要
 
 このプロジェクトでは、DockerやKubernetesで使われているLinuxコンテナの仕組みを、
-段階的に学習できる実装を提供します。
+Shellスクリプトを使って段階的に学習できます。
 
-## 実装バージョン
-
-### 🐚 [Shell版（推奨）](./shell_version/)
-
-**おすすめポイント**:
-- シンプルで読みやすい
-- すぐに実行できる
+**特徴**:
+- シンプルで読みやすいShellスクリプト
+- 4つのステップで段階的に学習
 - コメント付きで理解しやすい
-
-**開始方法**:
-```bash
-cd shell_version
-./setup_rootfs.sh    # rootfsを準備
-./step1_chroot.sh    # ステップ1から開始
-```
-
-詳細は [shell_version/README.md](./shell_version/README.md) を参照
-
-### 🔧 [C言語版](./step1_chroot/)（上級者向け）
-
-システムコールを直接学びたい方向け
+- すぐに実行して動作確認できる
 
 ## 学習内容
 
@@ -49,14 +33,14 @@ cd shell_version
 ## クイックスタート
 
 ```bash
-# Shell版を使う（初心者におすすめ）
 cd shell_version
-./setup_rootfs.sh
-./step1_chroot.sh
+./setup_rootfs.sh    # rootfsを準備
+./step1_chroot.sh    # ステップ1から開始
 ```
+
+詳細は [shell_version/README.md](./shell_version/README.md) を参照
 
 ## 参考資料
 
 - [Linux Namespaces](https://man7.org/linux/man-pages/man7/namespaces.7.html)
 - [Docker アーキテクチャ](https://docs.docker.com/get-started/overview/)
-- [コンテナ学習ガイド](./LEARNING_GUIDE.md)
