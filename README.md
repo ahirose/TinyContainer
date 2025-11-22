@@ -1,4 +1,4 @@
-# myOwnContainer
+# TinyContainer
 
 自作コンテナ - Linuxコンテナの仕組みを学ぶための教育プロジェクト
 
